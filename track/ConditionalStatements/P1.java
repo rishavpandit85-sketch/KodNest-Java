@@ -1,5 +1,5 @@
 
-public class Practice8 {
+public class P1 {
 
     public static void main(String[] args) {
         int num = 10;

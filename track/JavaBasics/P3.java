@@ -1,5 +1,5 @@
 
-public class Practice3 {
+public class P3 {
 
     public static void main(String[] args) {
         String learnerName = "Rishav";
