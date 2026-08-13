@@ -1,5 +1,5 @@
 
-class Pgm4 {
+public class P4 {
 
     public static void main(String[] args) {
         int res = add(10, 20);
