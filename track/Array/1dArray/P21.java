@@ -8,20 +8,19 @@ public class P21 {
         int index = 2;
         int element = 30;
 
-        int[] res = new int[a.length + 1];
+        int[] b = new int[a.length + 1];
 
-        for (int i = 0; i < res.length; i++) {
+        // Copy elements before index
+        System.arraycopy(a, 0, b, 0, index);
 
-            if (i == index) {
-                res[i] = element;
-            } else if (i < index) {
-                res[i] = a[i];
-            } else {
-                res[i] = a[i - 1];
-            }
-        }
+        // Insert element
+        b[index] = element;
 
-        for (int i : res) {
+        // Shift remaining elements
+        System.arraycopy(a, index, b, index + 1, a.length - index);
+
+        // Print result
+        for (int i : b) {
             System.out.print(i + " ");
         }
     }
