@@ -40,6 +40,3 @@ public class P10 {
         }
     }
 }
-
-class ArraySearch extends P10 {
-}
